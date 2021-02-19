@@ -22,7 +22,7 @@ $signedUrlCannedPolicy = $cloudFront->getSignedUrl([
     'expires'     => $expires,
 
 // specify path to the private key file on your EC2 instance, e.g. /home/ubuntu/cf-private-key.pem
-    'private_key' => '/etc/pki/tls/private/pk-APKAI6WJ53PQ4JLKF64A.pem',
+    'private_key' => '/etc/pki/tls/private/cf-private-key.pem',
 
 // specify the key pair id, e.g. APKAJ63NC4PRMGWKG6VQ
     'key_pair_id' => $_SERVER['CLOUDFRONT_KEY_PAIR_ID']
